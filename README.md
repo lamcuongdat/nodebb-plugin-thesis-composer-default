@@ -7,7 +7,7 @@ Plugin được viết dựa trên source code gốc của [nodebb-plugin-compos
 #### Composer mặc định
 ![Desktop Old Composer](screenshots/desktop-old.png?raw=true)
 ##### Composer đã chỉnh sửa
-![Desktop New Composer 1](screenshots/desktop-new1.png?raw=true)
-![Desktop New Composer 2](screenshots/desktop-new2.png?raw=true)
+![Desktop New Composer 1](screenshots/desktop-new1.PNG?raw=true)
+![Desktop New Composer 2](screenshots/desktop-new2.PNG?raw=true)
 ### Composer trên Mobile Devices
 ![Mobile Composer](screenshots/mobile.png?raw=true)
