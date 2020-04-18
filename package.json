@@ -1,16 +1,16 @@
 {
-  "_from": "nodebb-plugin-composer-default@6.3.23",
-  "_id": "nodebb-plugin-composer-default@6.3.23",
+  "_from": "nodebb-plugin-thesis-composer-default@6.3.23",
+  "_id": "nodebb-plugin-thesis-composer-default@6.3.23",
   "_inBundle": false,
   "_integrity": "sha512-XkNSH7qIalxCoh30+UlnWd54fYl4DZwSlJ9w7yYv+z39vrD9RGwxMD169R/6wjVUG+SEu8A7OlJva6g4HNkCBQ==",
-  "_location": "/nodebb-plugin-composer-default",
+  "_location": "/nodebb-plugin-thesis-composer-default",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "nodebb-plugin-composer-default@6.3.23",
-    "name": "nodebb-plugin-composer-default",
-    "escapedName": "nodebb-plugin-composer-default",
+    "raw": "nodebb-plugin-composer-thesis-default@6.3.23",
+    "name": "nodebb-plugin-thesis-composer-default",
+    "escapedName": "nodebb-plugin-thesis-composer-default",
     "rawSpec": "6.3.23",
     "saveSpec": null,
     "fetchSpec": "6.3.23"
@@ -27,7 +27,7 @@
     "email": "sales@nodebb.org"
   },
   "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-plugin-composer-default/issues"
+    "url": "https://github.com/lamcuongdat/nodebb-plugin-thesis-composer-default/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -36,7 +36,7 @@
   },
   "deprecated": false,
   "description": "Default composer for NodeBB",
-  "homepage": "https://github.com/NodeBB/nodebb-plugin-composer-default#readme",
+  "homepage": "https://github.com/lamcuongdat/nodebb-plugin-thesis-composer-default#readme",
   "keywords": [
     "nodebb",
     "plugin",
@@ -45,13 +45,13 @@
   ],
   "license": "MIT",
   "main": "library.js",
-  "name": "nodebb-plugin-composer-default",
+  "name": "nodebb-plugin-thesis-composer-default",
   "nbbpm": {
     "compatibility": "^1.13.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NodeBB/nodebb-plugin-composer-default.git"
+    "url": "git+https://github.com/lamcuongdat/nodebb-plugin-thesis-composer-default.git"
   },
   "version": "6.3.23"
 }
