@@ -1,11 +1,13 @@
-# Default Composer for NodeBB
+# Plugin cho composer của NodeBB (Luận văn CNTN 2016 - HCMUS)
 
-This plugin activates the default composer for NodeBB. It is activated by default, but can be swapped out as necessary.
+Plugin được viết dựa trên source code gốc của [nodebb-plugin-composer-default] (https://github.com/NodeBB/nodebb-plugin-composer-default)
 
-## Screenshots
+## Ảnh chụp màn hình
 
 ### Desktop
+#### Cũ
 ![Desktop Composer](screenshots/desktop.png?raw=true)
+##### Mới
 
 ### Mobile Devices
 ![Mobile Composer](screenshots/mobile.png?raw=true)
