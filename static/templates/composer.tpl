@@ -19,6 +19,16 @@
 			</div>
 		</nav>
 		<div class="row title-container">
+			<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
+				<ul class="dropdown-menu quick-search-results hidden">
+						<!-- IMPORT partials/quick-search-results.tpl -->
+				</ul>
+				<button class="btn btn-default composer-discard pull-right" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> <!--[[topic:composer.discard]]--></button>
+
+				<button class="btn btn-primary composer-submit pull-right" data-action="post" tabindex="6"><i class="fa fa-check"></i> <!--[[topic:composer.submit]]--></button>
+			</div>
+		</div>
+		<div class="row title-container">
 			<!-- IF showHandleInput -->
 			<div class="col-sm-3 col-md-12">
 				<input class="handle form-control" type="text" tabindex="1" placeholder="[[topic:composer.handle_placeholder]]" value="{handle}" />
@@ -30,24 +40,15 @@
 				<!-- ELSE -->
 				<span class="title form-control">[[topic:composer.replying_to, "{title}"]]</span>
 				<!-- ENDIF isTopicOrMain -->
-				<ul class="dropdown-menu quick-search-results hidden">
-					<!-- IMPORT partials/quick-search-results.tpl -->
-				</ul>
 			</div>
 
 			<!-- IF isTopic -->
 			<div class="category-list-container hidden-sm hidden-xs"></div>
 			<!-- ENDIF isTopic -->
-
+			<!--
 			<div class="pull-right draft-icon hidden-xs hidden-sm"></div>
-
-			<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
-				<button class="btn btn-default composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-
-				<button class="btn btn-primary composer-submit" data-action="post" tabindex="6"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
-			</div>
+			-->
 		</div>
-
 		<div class="category-tag-row">
 			<div class="btn-toolbar formatting-bar">
 				<ul class="formatting-group">
@@ -119,8 +120,10 @@
 					<span class="toggle-preview hide">[[modules:composer.show_preview]]</span>
 				</div>
 				<div class="pull-right draft-icon hidden-md hidden-lg"></div>
-				<textarea class="write" tabindex="4"></textarea>
+				<textarea class="write" tabindex="4" rows="5"></textarea>
 			</div>
+		</div>
+		<div class="row write-preview-container">
 			<div class="hidden-sm hidden-xs preview-container">
 				<div class="help-text">
 					<span class="toggle-preview">[[modules:composer.hide_preview]]</span>
@@ -128,7 +131,6 @@
 				<div class="preview well"></div>
 			</div>
 		</div>
-
 		<!-- IF isTopicOrMain -->
 		<div class="tag-row">
 			<div class="tags-container">
@@ -156,7 +158,8 @@
 		<!-- ENDIF isTopic -->
 
 		<div class="imagedrop"><div>[[topic:composer.drag_and_drop_images]]</div></div>
-
+		<!--
 		<div class="resizer"><div class="trigger text-center"><i class="fa"></i></div></div>
+		-->
 	</div>
 </div>

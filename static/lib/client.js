@@ -61,6 +61,12 @@ $(document).ready(function() {
 				}
 			});
 		});
+		$(window).resize(function(){
+			if (!localStorage.getItem('composer:previewToggled')){
+				console.log('change');
+				$('.write-preview-container .preview-container').height($('.composer-container').height()-90);
+			}
+		})
 	}
 
 	$(window).on('action:composer.topic.new', function(ev, data) {

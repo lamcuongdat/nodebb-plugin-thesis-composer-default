@@ -378,7 +378,15 @@ define('composer', [
 			e.stopPropagation();
 			composer.minimize(post_uuid);
 		});
-
+		postContainer.find('.write-container span.toggle-preview').on('click',function(e){
+			$('.write-preview-container .preview.well').parent().addClass('hide');
+			$('.write-preview-container .write-container').parent().removeClass('hide');
+			var previewHeight = $('.write-preview-container .write-container').height();
+			$('.write-preview-container .preview.well').parent().removeClass('hide');
+			$('.write-preview-container .write-container').parent().addClass('hide');
+			preview.render(postContainer);
+			$('.write-preview-container .preview.well').parent().height(previewHeight);
+		})
 		bodyEl.on('input propertychange', function() {
 			preview.render(postContainer);
 		});
@@ -476,7 +484,6 @@ define('composer', [
 			$(document.body).append(composerTemplate);
 
 			var postContainer = $(composerTemplate[0]);
-
 			resize.reposition(postContainer);
 			composer.enhance(postContainer, post_uuid, postData);
 			/*

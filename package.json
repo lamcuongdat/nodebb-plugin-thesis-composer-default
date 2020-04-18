@@ -1,32 +1,57 @@
 {
-  "name": "nodebb-plugin-composer-default",
-  "version": "6.3.23",
-  "description": "Default composer for NodeBB",
-  "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-plugin-composer-default"
+  "_from": "nodebb-plugin-composer-default@6.3.23",
+  "_id": "nodebb-plugin-composer-default@6.3.23",
+  "_inBundle": false,
+  "_integrity": "sha512-XkNSH7qIalxCoh30+UlnWd54fYl4DZwSlJ9w7yYv+z39vrD9RGwxMD169R/6wjVUG+SEu8A7OlJva6g4HNkCBQ==",
+  "_location": "/nodebb-plugin-composer-default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nodebb-plugin-composer-default@6.3.23",
+    "name": "nodebb-plugin-composer-default",
+    "escapedName": "nodebb-plugin-composer-default",
+    "rawSpec": "6.3.23",
+    "saveSpec": null,
+    "fetchSpec": "6.3.23"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-composer-default/-/nodebb-plugin-composer-default-6.3.23.tgz",
+  "_shasum": "6ea5f3cde7fecd751d195581a3621eb529d51fe2",
+  "_spec": "nodebb-plugin-composer-default@6.3.23",
+  "_where": "D:\\ĐẠI HỌC\\NĂM 4\\HK2\\NodeBB\\nodebb\\NodeBB",
+  "author": {
+    "name": "NodeBB Team",
+    "email": "sales@nodebb.org"
+  },
+  "bugs": {
+    "url": "https://github.com/NodeBB/nodebb-plugin-composer-default/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "screenfull": "^4.0.0",
+    "validator": "^11.0.0"
+  },
+  "deprecated": false,
+  "description": "Default composer for NodeBB",
+  "homepage": "https://github.com/NodeBB/nodebb-plugin-composer-default#readme",
   "keywords": [
     "nodebb",
     "plugin",
     "composer",
     "markdown"
   ],
-  "author": {
-    "name": "NodeBB Team",
-    "email": "sales@nodebb.org"
-  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-plugin-composer-default/issues"
-  },
-  "readmeFilename": "README.md",
+  "main": "library.js",
+  "name": "nodebb-plugin-composer-default",
   "nbbpm": {
     "compatibility": "^1.13.0"
   },
-  "dependencies": {
-    "screenfull": "^4.0.0",
-    "validator": "^11.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeBB/nodebb-plugin-composer-default.git"
+  },
+  "version": "6.3.23"
 }

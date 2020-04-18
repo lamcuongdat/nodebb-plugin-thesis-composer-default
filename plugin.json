@@ -1,6 +1,6 @@
 {
-	"id": "nodebb-plugin-composer-default",
-	"url": "https://github.com/NodeBB/nodebb-plugin-composer-default",
+	"id": "nodebb-plugin-thesis-composer-default",
+	"url": "https://github.com/lamcuongdat/nodebb-plugin-thesis-composer-default",
 	"library": "library.js",
 	"hooks": [
 		{ "hook": "static:app.load", "method": "init" },
@@ -10,7 +10,8 @@
 		{ "hook": "filter:meta.getLinkTags", "method": "addPrefetchTags" }
 	],
 	"less": [
-		"./static/less/composer.less"
+		"./static/less/composer.less",
+		"./static/less/thesis-composer.less"
 	],
 	"scripts": [
 		"./static/lib/client.js",

@@ -55,12 +55,16 @@ define('composer/preview', function() {
 	};
 
 	preview.handleToggler = function(postContainer) {
+		localStorage.setItem('composer:previewToggled', true);
 		preview.env = utils.findBootstrapEnvironment();
-
 		function hidePreview() {
 			togglePreview(false);
 			if (preview.env !== 'xs' && preview.env !=='sm') {
 				localStorage.setItem('composer:previewToggled', true);
+				$('.write-preview-container .write-container').parent().removeClass('hide');
+				$('.write-preview-container textarea').attr('rows','13');
+				$('.write-preview-container .preview-container').height($('.write-preview-container').height());
+				$('.write-preview-container .preview-container').parent().addClass('hide');
 			}
 		}
 
@@ -68,6 +72,10 @@ define('composer/preview', function() {
 			togglePreview(true);
 			if (preview.env !== 'xs' && preview.env !=='sm') {
 				localStorage.removeItem('composer:previewToggled');
+				$('.write-preview-container .preview-container').parent().removeClass('hide');
+				$('.write-preview-container textarea').attr('rows','13');
+				$('.write-preview-container .preview-container').height($('.write-preview-container').height());
+				$('.write-preview-container .write-container').parent().addClass('hide');
 			}
 		}
 

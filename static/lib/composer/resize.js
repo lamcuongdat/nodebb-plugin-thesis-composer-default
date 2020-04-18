@@ -61,8 +61,17 @@ define('composer/resize', ['taskbar'], function(taskbar) {
 			ratio = Math.min(Math.max(ratio, minimumRatio), 1);
 
 			var top = ratio * bounds.boundedHeight / bounds.height;
-			elem.style.top = ((1 - top) * 100).toString() + '%';
-
+			if (ratio<1)
+			{
+				elem.style.top = /*((1 - top - 0.3) * 100).toString() +*/ '15%';
+				elem.style.bottom = /*((1 - top - 0.3) * 100).toString() +*/'5%';
+				elem.style.width= ($('.container').width() * 0.6).toString() +'px';
+				elem.style['margin-left'] = "auto";
+				elem.style['margin-right'] = "auto";
+			}
+			else{
+				elem.style.top = ((1 - top) * 100).toString() + '%';
+			}
 			// Add some extra space at the bottom of the body so that
 			// the user can still scroll to the last post w/ composer open
 			var rect = elem.getBoundingClientRect();
