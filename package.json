@@ -32,7 +32,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "screenfull": "^4.0.0",
-    "validator": "^11.0.0"
+    "validator": "^13.7.0"
   },
   "deprecated": false,
   "description": "Default composer for NodeBB",
